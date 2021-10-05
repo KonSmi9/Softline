@@ -21,6 +21,11 @@ export const ModalWindow : FC<ModalWindowProps> =({visible, onCreate, onCancel,e
         form.setFieldsValue({firstname: employee.firstname})
         form.setFieldsValue({patronymic: employee.patronymic})
         form.setFieldsValue({aboutMe: employee.aboutMe})
+    }else{
+        form.setFieldsValue({surname: ''})
+        form.setFieldsValue({firstname: ''})
+        form.setFieldsValue({patronymic: ''})
+        form.setFieldsValue({aboutMe: ''})
     }
 
     return(
